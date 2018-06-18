@@ -1,0 +1,36 @@
+<div class="container">
+
+  <h1 class="text-center"><i>{{'bookApt' | translate}}</i></h1>
+  <h4 class="text-center"><i>{{'ourInvest' | translate}}</i></h4>
+  <br/>
+  <h2 class="text-center"><i>{{'pickTopic' | translate}}</i></h2>
+  <br/>
+  <div class="row">
+    <div *ngIf = "buttons && buttons.length ===1" class="col-sm-12 col-md-12">
+        <button type="button" class="btn btn-td">{{buttons[0].text | translate}}</button>
+    </div>
+    <div *ngIf = "buttons && buttons.length >1">
+
+    <div  *ngFor="let button of buttons" class="col-sm-12 col-md-6">
+        <button type="button" class="btn btn-td">{{button.text | translate}}</button>
+      
+    </div>
+    <div class="row">
+        <angular2-multiselect [data]="dropdownList"  
+    [settings]="dropdownSettings" 
+    (onSelect)="onItemSelect($event)" 
+    (onDeSelect)="OnItemDeSelect($event)"
+    [selectedItems]="selectedItems"
+    (onSelectAll)="onSelectAll($event)"
+    (onDeSelectAll)="onDeSelectAll($event)"></angular2-multiselect>
+    </div>
+  </div>
+
+  </div>
+  <br/>
+  <div class="text-center">
+      <a routerLink="/home">{{'returnToPrevious' | translate}}</a>
+
+  </div>
+</div>
+

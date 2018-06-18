@@ -1,0 +1,12 @@
+{
+     "button1": "Open a chequing account" ,
+     "button2": "Open a savings account" ,
+     "button3": "Open a U.S. Dollar account" ,
+     "button4": "Review my everyday banking needs" ,
+     "button5": "Switch to TD" ,
+     "button6": "Apply for Overdraft Protection",
+     "bookApt":"Book an Appointment",
+     "ourInvest":"Our Investing Topics",
+     "pickTopic":"Pick a topic, then we'll find a time and place",
+     "returnToPrevious":"< Return to previous screen"
+}
